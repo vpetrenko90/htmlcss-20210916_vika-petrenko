@@ -57,7 +57,9 @@ article {
     article ul {
         margin: 0;
     }
-
+    article h2 {
+        margin-bottom: 15px;
+    }
 footer {
     background-color: #7048E8;
     padding: 10px;
