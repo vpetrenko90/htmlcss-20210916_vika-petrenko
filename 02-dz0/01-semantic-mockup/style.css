@@ -2,16 +2,19 @@ html {
     height: 100%;
 }
 
-body {
-    margin: 0;
+.body, .body > * {
     padding: 0;
+    margin: 0;
+}
+
+.body {
     color: #fff;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-main {
+.main {
     flex: 1;
     height: 100%;
     display: flex;
@@ -20,51 +23,40 @@ main {
     padding: 15px;
 }
 
-h1, h2, footer, article, nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-h1 {
+.title {
     margin: 0;
     padding: 10px;
     text-align: center;
     background-color: red;
 }
 
-nav {
-    text-align: center;
+.nav {
     background-color: orange;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-    nav a {
+    .nav .nav__item {
+        padding: 10px;
         color: #fff;
         font-size: 24px;
     }
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-        nav ul li {
-            padding: 10px;
-        }
 
-article {
+.article {
     background-color: blue;
     flex: 1;
     padding: 10px;
 }
-    article:nth-child(1) {
-        margin-bottom: 10px;
-    }
-    article ul {
+    .article .article__title {
         margin: 0;
     }
-    article h2 {
-        margin-bottom: 15px;
+    .article:not(:last-child) {
+        margin-bottom: 10px;
     }
 
-footer {
+.footer {
     background-color: #7048E8;
     padding: 10px;
     font-size: 32px;
