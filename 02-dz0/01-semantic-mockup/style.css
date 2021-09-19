@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h1, h2, footer, article, nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+}
+
+nav {
+    text-align: center;
+    background-color: orange;
+}
+    nav a {
+        color: #fff;
+        font-size: 24px;
+    }
+    nav ul {
+        list-style: none;
+    }
+
+article {
+    background-color: blue;
+}
+    article ul {
+        margin: 0;
+    }
+
+footer {
+    background-color: #7048E8;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+}
