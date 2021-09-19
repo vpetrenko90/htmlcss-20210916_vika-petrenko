@@ -1,9 +1,22 @@
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+main {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    padding: 15px;
+}
 h1, h2, footer, article, nav ul {
     padding: 0;
     margin: 0;
@@ -26,11 +39,21 @@ nav {
     }
     nav ul {
         list-style: none;
+        display: flex;
+        justify-content: center;
     }
+        nav ul li {
+            padding: 10px;
+        }
 
 article {
     background-color: blue;
+    flex: 1;
+    padding: 10px;
 }
+    article:nth-child(1) {
+        margin-bottom: 10px;
+    }
     article ul {
         margin: 0;
     }
