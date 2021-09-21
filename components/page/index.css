@@ -1,3 +1,4 @@
 .page {
-    background-color: var(--bgColor)
+    background-color: var(--bgColor);
+    border: 1px solid var(--grey-2);
 }
