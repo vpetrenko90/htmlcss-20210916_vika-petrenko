@@ -11,14 +11,33 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --bgColor: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --h1-size: 50px;
+    --h2-size: 38px;
+    --text-size: 16px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-size: var(--text-size);
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
