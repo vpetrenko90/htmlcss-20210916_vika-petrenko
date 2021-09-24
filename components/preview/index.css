@@ -1,0 +1,5 @@
+.preview {
+    flex: 1;
+    background-color: var(--bgColor);
+    border: 1px solid var(--grey-2);
+}

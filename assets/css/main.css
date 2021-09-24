@@ -32,14 +32,6 @@
     font-size: var(--text-size);
 }
 
-html {
+html, body {
     height: 100%;
-}
-body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex: 1;
 }
