@@ -4,6 +4,6 @@
     flex-direction: column;
 }
 .page__box {
-    width: 1110px;
+    width: var(--content-width);
     margin: 0 auto;
 }
