@@ -15,6 +15,7 @@
 }
 
 .accordion__summary {
+    font-family: 'Inter', sans-serif;
     display: block;
     list-style: none;
 }
@@ -23,6 +24,7 @@
 }
 
 .accordion__description {
+    font-family: 'Inter', sans-serif;
     margin-top: 16px;
     line-height: 24px;
     color: var(--grey-4);
