@@ -1,5 +1,19 @@
 .preview {
     flex: 1;
-    background-color: var(--bgColor);
+    background-color: var(--bg-color);
     border: 1px solid var(--grey-2);
+    padding: 68px 0 174px;
+}
+.preview .page__box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.preview__item {
+    flex-basis: calc((100% - 60px) / 3);
+    height: 367px;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px var(--box-shadow);
+    border-radius: 12px;
 }
