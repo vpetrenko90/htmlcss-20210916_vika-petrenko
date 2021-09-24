@@ -10,10 +10,18 @@
     justify-content: space-between;
 }
 .preview__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     flex-basis: calc((100% - 60px) / 3);
     height: 367px;
     margin-bottom: 30px;
     background-color: var(--white);
     box-shadow: 0 2px 4px var(--box-shadow);
     border-radius: 12px;
+}
+.preview__title {
+    padding-bottom: 30px;
+    font-size: 21px;
+    font-weight: 500;
 }
