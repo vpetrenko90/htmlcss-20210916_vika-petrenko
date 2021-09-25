@@ -1,0 +1,37 @@
+.histogram {
+    padding: 16px 24px 24px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+
+    width: 354px;
+    height: 185px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.histogram__total {
+}
+.histogram__label {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.histogram__count {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.histogram__link {
+    font-family: Inter, sans-serif;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.histogram__content {
+
+}
