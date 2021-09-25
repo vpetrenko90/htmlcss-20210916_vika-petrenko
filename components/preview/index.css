@@ -8,6 +8,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 .preview__item {
     display: flex;
@@ -20,8 +21,15 @@
     box-shadow: 0 2px 4px var(--box-shadow);
     border-radius: 12px;
 }
+@media screen and (max-width: 600px) {
+    .preview__item {
+        flex-basis: 100%;
+    }
+}
+
 .preview__title {
-    padding-bottom: 30px;
+    padding: 30px;
+    text-align: center;
     font-size: 21px;
     font-weight: 500;
 }
