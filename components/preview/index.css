@@ -4,7 +4,7 @@
     border: 1px solid var(--grey-2);
     padding: 68px 0 174px;
 }
-.preview .page__box {
+.preview__box {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
