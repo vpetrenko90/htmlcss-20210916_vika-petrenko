@@ -12,10 +12,7 @@
 }
 .preview__item {
     width: calc((100% - 60px) / 3);
-    height: 367px;
     margin-bottom: 30px;
-    box-shadow: 0 2px 4px var(--box-shadow);
-    border-radius: 12px;
 }
 @media screen and (max-width: 600px) {
     .preview__item {
@@ -24,10 +21,13 @@
 }
 
 .card {
+    height: 367px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background-color: var(--white);
+    box-shadow: 0 2px 4px var(--box-shadow);
+    border-radius: 12px;
 }
 .card__title {
     padding: 30px;
