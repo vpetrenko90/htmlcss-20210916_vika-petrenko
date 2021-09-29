@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Главная страница -->
 <html lang="ru">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
@@ -10,25 +9,29 @@
 <body>
 <div class="page">
     <header class="page__header">
-        <h1>Header</h1>
+        <h1 class="page__title">Header</h1>
     </header>
-    <main class="page__main">
-        <div class="menu">
-            <div class="menu__title">Components</div>
-            <div class="menu__item">Modal</div>
-            <div class="menu__item">Tooltip</div>
-            <div class="menu__item">Avatar</div>
-            <div class="menu__item">Calendar</div>
-            <div class="menu__item">Histogram</div>
-            <div class="menu__item">Custom form elements</div>
-            <div class="menu__item">Main page</div>
-        </div>
-        <div class="component">
-            <h1>Histogram</h1>
+    <main class="page__container">
+        <div class="page__main">
+            <div class="menu">
+                <h4 class="menu__title">Components</h4>
+                <div class="menu__items">
+                    <div class="menu__item">Modal</div>
+                    <div class="menu__item">Tooltip</div>
+                    <div class="menu__item">Avatar</div>
+                    <div class="menu__item">Calendar</div>
+                    <div class="menu__item menu__item_active">Histogram</div>
+                    <div class="menu__item">Custom form elements</div>
+                    <div class="menu__item menu__item_bottom">Main page</div>
+                </div>
+            </div>
+            <div class="component">
+                <h3 class="component__title">Histogram</h3>
+            </div>
         </div>
     </main>
     <footer class="page__footer">
-        Reusable component library
+        <h5 class="page__footer-title">Reusable component library</h5>
     </footer>
 </div>
 </body>
