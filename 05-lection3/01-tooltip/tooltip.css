@@ -1,10 +1,7 @@
 /* demo styles */
 .demo {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
 }
 
 /* Tooltip */
@@ -28,14 +25,27 @@
     letter-spacing: 0;
 }
 .tooltip__bubble {
-    /*display: none;*/
-    position: absolute;
-    bottom: 24px;
+    display: none;
     padding: 13px 8px;
-    max-width: 130px;
+    max-width: 200px;
     border-radius: 10px;
     background-color: var(--blue);
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: calc(100% + 9px);
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
+}
+.tooltip__bubble:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    border: 7px solid transparent;
+    border-top: 6px solid var(--blue);
 }
