@@ -13,7 +13,7 @@
     letter-spacing: 0;
     text-align: center;
     margin-bottom: 24px;
-    color: #334D6E;
+    color: var(--blue-dark);
 }
 .calendar__wrapper {
     position: relative;
@@ -42,17 +42,16 @@
     font-family: Inter, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: #90A0B7;
+    color: var(--grey-3);
 }
 .calendar__item-date {
-    color: #334D6E;
+    color: var(--blue-dark);
     font-family: Inter, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
 .calendar__item-selected {
-    background: #A0B1F5;
-    opacity: 0.2;
+    background: var(--blue-light);
 }
 .calendar__item-selected_start,
 .calendar__item-selected_end {
