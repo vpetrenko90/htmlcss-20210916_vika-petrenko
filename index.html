@@ -2,6 +2,7 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
 
@@ -9,11 +10,22 @@
         <link rel="stylesheet" href="./components/header/index.css">
         <link rel="stylesheet" href="./components/page/index.css">
         <link rel="stylesheet" href="./components/preview/index.css">
+        <link rel="stylesheet" href="./components/menu/main-menu.css">
     </head>
     <body>
         <div class="page">
             <header class="header">
                 <div class="page__box">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <img src="./components/header/logo.svg" alt="Demo logo">
+                        </div>
+                        <div class="main-menu">
+                            <div class="main-menu__item main-menu__item-active">Components</div>
+                            <div class="main-menu__item">About</div>
+                            <div class="main-menu__item">Contact</div>
+                        </div>
+                    </div>
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
@@ -21,22 +33,22 @@
                 <div class="page__box ">
                     <div class="preview__box">
                         <div class="preview__item card">
-                            <div class="card__title">Tooltip</div>
-                        </div>
-                        <div class="preview__item card">
-                            <div class="card__title">Custom form elements</div>
-                        </div>
-                        <div class="preview__item card">
                             <div class="card__title">Calendar</div>
                         </div>
                         <div class="preview__item card">
-                            <div class="card__title">Modal dialog</div>
+                            <div class="card__title">Avatar</div>
                         </div>
                         <div class="preview__item card">
                             <div class="card__title">Histogram</div>
                         </div>
                         <div class="preview__item card">
-                            <div class="card__title">Avatar</div>
+                            <div class="card__title">Modal</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Tooltip</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Form</div>
                         </div>
                     </div>
                 </div>

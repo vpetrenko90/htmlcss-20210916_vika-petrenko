@@ -1,0 +1,23 @@
+.main-menu {
+    display: none;
+}
+@media screen and (min-width: 1110px) {
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-menu__item {
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: var(--grey-3);
+    }
+    .main-menu__item:not(:first-child) {
+        margin-left: 24px;
+    }
+    .main-menu__item-active {
+        color: var(--black);
+    }
+}
