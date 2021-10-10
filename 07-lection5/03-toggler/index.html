@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Страница чекбокса -->
+<!-- Страница с кнопкой переключения -->
 <html lang="ru">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,11 +8,32 @@
     <link rel="stylesheet" href="./toggler.css">
 </head>
 <body>
-<div>
-    <label class="toggle">
-        <input type="checkbox" class="toggle__input">
-        <span class="toggle__slider round"></span>
-    </label>
-</div>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox"/>
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">Off</span>
+            </span>
+        </label>
+    </div>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox" checked />
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">On</span>
+            </span>
+        </label>
+    </div>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox" disabled />
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">Disabled</span>
+            </span>
+        </label>
+    </div>
 </body>
 </html>

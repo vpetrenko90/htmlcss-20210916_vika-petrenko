@@ -1,30 +1,34 @@
 .toggle {
-    position: relative;
     display: inline-block;
-    width: 52px;
-    height: 28px;
 }
-
 .toggle__input {
     opacity: 0;
     width: 0;
     height: 0;
-}
-
-.toggle__slider {
+    clip: rect(0, 0, 0, 0);
     position: absolute;
+}
+.toggle__state {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     cursor: pointer;
+    position: relative;
+}
+.toggle__slider {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--grey-2);
+    border: 1px solid var(--grey-2);
     border-radius: 16px;
+    width: 52px;
+    height: 28px;
+    box-sizing: border-box;
 }
 .toggle__slider:before {
     border-radius: 50%;
 }
-
 .toggle__slider:before {
     position: absolute;
     content: "";
@@ -32,13 +36,37 @@
     width: 24px;
     left: 2px;
     bottom: 2px;
+    background-color: var(--grey-2);
+}
+.toggle__label {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--grey-4);
+    margin-left: 12px;
+}
+.toggle__input:checked ~ .toggle__state .toggle__slider {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.toggle__input:checked ~ .toggle__state .toggle__slider:before {
+    transform: translateX(24px);
     background-color: var(--white);
 }
-
-.toggle__input:checked + .toggle__slider {
-    background-color: var(--blue);
+.toggle__input:disabled ~ .toggle__state {
+    cursor: default;
 }
-
-.toggle__input:checked + .toggle__slider:before {
-    transform: translateX(24px);
+.toggle__input:disabled ~ .toggle__state .toggle__label {
+    color: var(--grey-4);
+}
+.toggle__input:disabled ~ .toggle__state .toggle__slider:before {
+    background-color: var(--grey-3);
+    opacity: 0.25;
+}
+.toggle__input:disabled ~ .toggle__state .toggle__slider {
+    background-color: var(--grey-2);
 }
