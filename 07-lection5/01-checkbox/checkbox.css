@@ -2,7 +2,10 @@
     display: inline-block;
 }
 .checkbox__input {
-    display: none;
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }
 .checkbox__state {
     display: flex;
@@ -55,4 +58,7 @@
 }
 .checkbox__input:disabled ~ .checkbox__state {
     cursor: default;
+}
+.checkbox__input:focus ~ .checkbox__state .checkbox__label {
+    text-decoration: underline;
 }
