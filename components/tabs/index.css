@@ -1,0 +1,25 @@
+.tabs {
+    display: flex;
+    gap: 40px;
+}
+.tabs__item {
+    margin-bottom: 11px;
+}
+.tabs__label {
+    padding-bottom: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--grey-3);
+}
+.tabs__input {
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+.tabs__input:checked ~ .tabs__label  {
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
+}
