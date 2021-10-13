@@ -16,10 +16,6 @@
     position: relative;
 }
 .toggle__slider {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border: 1px solid var(--grey-2);
     border-radius: 16px;
     width: 52px;
