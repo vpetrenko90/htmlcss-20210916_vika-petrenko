@@ -2,10 +2,57 @@
 <!-- Страница с полем ввода -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
+        <main style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap;">
+            <!--Default-->
+            <div class="input">
+                <label class="input__label" for="input-default">Label</label>
+                <div class="input__wrapper">
+                    <input id="input-default" type="text" class="input__field" placeholder="Placeholder"/>
+                </div>
+            </div>
 
+            <!--Focus-->
+            <div class="input">
+                <label class="input__label" for="input-focus">Focus</label>
+                <div class="input__wrapper">
+                    <input id="input-focus" type="text" class="input__field" value="Filled input" autofocus/>
+                </div>
+            </div>
+
+            <!--Success-->
+            <div class="input">
+                <label class="input__label" for="input-success">Success</label>
+                <div class="input__wrapper">
+                    <input id="input-success" type="text" class="input__field" value="Success"/>
+                    <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#input-success"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!--Error-->
+            <div class="input input__error">
+                <label class="input__label" for="input-error">Error</label>
+                <div class="input__wrapper">
+                    <input class="input__field" id="input-error" type="text" value="Error"/>
+                    <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#input-error"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!--Disabled-->
+            <div class="input input__disabled">
+                <label class="input__label" for="input-disabled">Disabled</label>
+                <div class="input__wrapper">
+                    <input id="input-disabled" type="text" class="input__field" disabled />
+                </div>
+            </div>
+        </main>
     </body>
 </html>
