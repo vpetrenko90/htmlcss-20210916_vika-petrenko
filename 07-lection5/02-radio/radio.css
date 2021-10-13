@@ -51,9 +51,6 @@
     display: block;
 }
 .radio__input:disabled ~ .radio__state .radio__control {
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
     background-color: var(--grey-2);
 }
 .radio__input:disabled ~ .radio__state .radio__label {
