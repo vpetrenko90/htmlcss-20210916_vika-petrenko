@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./toggler.css">
+</head>
+<body>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox"/>
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">Off</span>
+            </span>
+        </label>
+    </div>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox" checked />
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">On</span>
+            </span>
+        </label>
+    </div>
+    <div>
+        <label class="toggle">
+            <input class="toggle__input" type="checkbox" disabled />
+            <span class="toggle__state">
+                <span class="toggle__slider"></span>
+                <span class="toggle__label">Disabled</span>
+            </span>
+        </label>
+    </div>
+</body>
 </html>

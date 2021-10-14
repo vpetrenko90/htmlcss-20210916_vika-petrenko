@@ -1,0 +1,68 @@
+.toggle {
+    display: inline-block;
+}
+.toggle__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+.toggle__state {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.toggle__slider {
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    width: 52px;
+    height: 28px;
+    box-sizing: border-box;
+}
+.toggle__slider:before {
+    border-radius: 50%;
+}
+.toggle__slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--grey-2);
+}
+.toggle__label {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--grey-4);
+    margin-left: 12px;
+}
+.toggle__input:checked ~ .toggle__state .toggle__slider {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.toggle__input:checked ~ .toggle__state .toggle__slider:before {
+    transform: translateX(24px);
+    background-color: var(--white);
+}
+.toggle__input:disabled ~ .toggle__state {
+    cursor: default;
+}
+.toggle__input:disabled ~ .toggle__state .toggle__label {
+    color: var(--grey-4);
+}
+.toggle__input:disabled ~ .toggle__state .toggle__slider:before {
+    background-color: var(--grey-3);
+    opacity: 0.25;
+}
+.toggle__input:disabled ~ .toggle__state .toggle__slider {
+    background-color: var(--grey-2);
+}
