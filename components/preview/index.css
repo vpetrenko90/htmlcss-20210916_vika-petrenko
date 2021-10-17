@@ -4,6 +4,9 @@
     border: 1px solid var(--grey-2);
     padding: 22px 16px 174px;
     box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 .preview__box {
     display: flex;
