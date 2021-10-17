@@ -14,13 +14,20 @@
 .header__logo {
     margin: 17px 0;
 }
+.header__icon {
+    fill: var(--dark-bg);
+}
+.header__menu {
+    display: flex;
+    gap: 57px;
+}
 @media screen and (min-width: 1110px) {
     .header__title {
         font-size: var(--h1-size);
         font-weight: 500;
         line-height: 64px;
         margin: 15px 0 40px;
-        color: var(--black);
+        color: var(--font-color);
     }
     .header__top {
         justify-content: space-between;

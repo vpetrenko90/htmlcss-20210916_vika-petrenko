@@ -30,14 +30,29 @@
     --gradient: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, var(--grey-2) 102.52%);
     --content-width: 1110px;
     --modal-background: rgba(196, 196, 196, 0.5);
+    --font-color: var(--black);
+    --dark-bg: var(--black);
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    color: var(--black);
+    color: var(--font-color);
     font-size: var(--text-size);
+}
+
+html[data-theme-dark] {
+    --main-bg: var(--black);
+    --bg-color: var(--grey-4);
+    --dark-bg: var(--grey-1);
+    --font-color: #ffffff75;
+}
+
+html[data-mode="dark"] img {
+    filter: brightness(.8) contrast(1.2);
 }
 
 html, body {
     height: 100%;
+    background-color: var(--main-bg);
+    color: var(--font-color);
 }

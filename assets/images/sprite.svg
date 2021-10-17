@@ -1,5 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
     <defs>
+        <symbol id="logo">
+            <rect y="1" width="30" height="30" />
+            <rect x="38" width="32" height="32" rx="16" />
+            <path d="M78 0L110 32H78V0Z" />
+        </symbol>
+    </defs>
+    <defs>
         <symbol id="checkmark">
             <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>

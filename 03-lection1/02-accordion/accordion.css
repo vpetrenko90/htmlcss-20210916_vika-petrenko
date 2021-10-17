@@ -1,7 +1,7 @@
 /* Стилизация аккордеона */
 .accordion {
     font-size: 16px;
-    color: var(--black);
+    color: var(--font-color);
 }
 
 .accordion__item {
