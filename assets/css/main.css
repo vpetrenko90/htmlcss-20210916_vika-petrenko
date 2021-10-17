@@ -32,6 +32,8 @@
     --modal-background: rgba(196, 196, 196, 0.5);
     --font-color: var(--black);
     --dark-bg: var(--black);
+    --light-bg: var(--white);
+    --card-bg: var(--white);
 }
 
 * {
@@ -41,9 +43,12 @@
 }
 
 html[data-theme-dark] {
+    --text-primary: var(--white);
     --main-bg: var(--black);
     --bg-color: var(--grey-4);
     --dark-bg: var(--grey-1);
+    --light-bg: var(--grey-2);
+    --card-bg: var(--black);
     --font-color: #ffffff75;
 }
 

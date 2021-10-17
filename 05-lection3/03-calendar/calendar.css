@@ -49,7 +49,7 @@
 }
 .calendar__item_selected-start,
 .calendar__item_selected-end {
-    color: var(--white);
+    color: var(--light-bg);
     background-color: var(--blue);
     opacity: 1;
 }

@@ -23,12 +23,12 @@
 }
 
 .button_primary {
-    color: var(--white);
+    color: var(--light-bg);
     background-color: var(--primary);
 }
 
 .button_secondary {
-    color: var(--white);
+    color: var(--light-bg);
     background-color: var(--secondary);
 }
 

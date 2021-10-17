@@ -56,7 +56,7 @@
 }
 .toggle__input:checked ~ .toggle__state .toggle__slider:before {
     transform: translateX(24px);
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 .toggle__input:disabled ~ .toggle__state {
     cursor: default;
