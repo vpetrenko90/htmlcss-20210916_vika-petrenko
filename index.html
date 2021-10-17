@@ -32,57 +32,64 @@
                 <div class="page__box">
                     <div class="tabs">
                         <div class="tabs__item">
-                            <input class="tabs__input" name="tab" type="radio" id="#all-tab" checked>
-                            <label class="tabs__label" for="#all-tab">All components</label>
+                            <input class="tabs__input" name="tab" type="radio" id="all-tab" checked>
+                            <label class="tabs__label" for="all-tab">All components</label>
                         </div>
 
                         <div class="tabs__item">
-                            <input class="tabs__input" name="tab" type="radio" id="#complex-tab">
-                            <label class="tabs__label" for="#complex-tab">Complex</label>
+                            <input class="tabs__input" name="tab" type="radio" id="complex-tab">
+                            <label class="tabs__label" for="complex-tab">Complex</label>
                         </div>
 
                         <div class="tabs__item">
-                            <input class="tabs__input" name="tab" type="radio" id="#simple-tab">
-                            <label class="tabs__label" for="#simple-tab">Simple</label>
+                            <input class="tabs__input" name="tab" type="radio" id="simple-tab">
+                            <label class="tabs__label" for="simple-tab">Simple</label>
                         </div>
                     </div>
                 </div>
             </header>
             <main class="preview">
-                <div class="page__box ">
-                    <div class="tabs__content tabs__content_complex">
-                        <div class="preview__box">
-                            <div class="preview__item card">
-                                <div class="card__title">Calendar</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Modal</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Tooltip</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Form</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Form</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Form</div>
-                            </div>
+                <div class="page__box tabs__content tabs__content_complex-tab">
+                    <div class="preview__box">
+                        <div class="preview__item card">
+                            <div class="card__title">Calendar</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Histogram</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Modal</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Calendar</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Histogram</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Modal</div>
                         </div>
                     </div>
-                    <div class="tabs__content tabs__content_simple">
-                        <div class="preview__box">
-                            <div class="preview__item card">
-                                <div class="card__title">Avatar</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Histogram</div>
-                            </div>
-                            <div class="preview__item card">
-                                <div class="card__title">Histogram</div>
-                            </div>
+                </div>
+                <div class="page__box tabs__content tabs__content_simple-tab">
+                    <div class="preview__box">
+                        <div class="preview__item card">
+                            <div class="card__title">Avatar</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Tooltip</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Form</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Avatar</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Tooltip</div>
+                        </div>
+                        <div class="preview__item card">
+                            <div class="card__title">Form</div>
                         </div>
                     </div>
                 </div>
@@ -96,5 +103,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./components/tabs/tabs.js"></script>
     </body>
 </html>

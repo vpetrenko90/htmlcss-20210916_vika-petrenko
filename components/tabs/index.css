@@ -24,3 +24,11 @@
     border-bottom: 5px solid var(--black);
     color: var(--black);
 }
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content_visible {
+    display: block;
+}
