@@ -14,50 +14,50 @@
 .burger-menu[data-open] {
     display: flex;
 }
-.burger__input {
+.burger-menu__input {
     width: 0;
     height: 0;
     clip: rect(0, 0, 0, 0);
     position: absolute;
 }
-.burger__item, .burger__title, .burger__item_single {
+.burger-menu__item, .burger-menu__title, .burger-menu__item_single {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     color: var(--grey-4);
 }
-.burger__item {
+.burger-menu__item {
     font-family: Inter, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
     margin-top: 16px;
 }
-.burger__item_selected {
+.burger-menu__item_selected {
     color: var(--red);
 }
-.burger__title {
+.burger-menu__title {
     font-family: Inter, sans-serif;
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-3);
 }
-.burger__item_single {
+.burger-menu__item_single {
     color: var(--grey-4);
     margin: 0;
 }
-.burger__theme {
+.burger-menu__theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.burger__header {
+.burger-menu__header {
     display: flex;
     justify-content: center;
     padding: 17px 0 8px;
 }
-.burger__close {
+.burger-menu__close {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -71,10 +71,10 @@
     top: 16px;
     left: 12px;
 }
-.burger__content {
+.burger-menu__content {
     margin: 0 16px 43px;
 }
-.burger__divider {
+.burger-menu__divider {
     border: 1px solid var(--grey-2);
     margin: 24px 0;
 }
