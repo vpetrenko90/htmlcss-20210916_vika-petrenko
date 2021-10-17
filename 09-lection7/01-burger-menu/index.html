@@ -12,15 +12,18 @@
     <body>
     <main>
         <input type="checkbox" id="burger" class="burger__input">
-        <label id="burger-menu-open" for="burger"></label>
+        <label id="burger-menu-open" for="burger">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/sprite.svg#burger-open"></use>
+            </svg>
+        </label>
 
         <div id="burger-menu" class="burger-menu" data-open>
-            <label id="burger-menu-close" for="burger"></label>
-            <div class="burger__close">
+            <label id="burger-menu-close" class="burger__close" for="burger">
                 <svg class="burger__icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="../../assets/images/sprite.svg#burger-close"></use>
                 </svg>
-            </div>
+            </label>
             <div class="burger__header">
                 <div class="header__logo">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">

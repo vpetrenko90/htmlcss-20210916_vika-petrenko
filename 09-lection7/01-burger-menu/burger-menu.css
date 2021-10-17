@@ -1,13 +1,24 @@
+.burger-menu {
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: var(--white);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100%;
+}
+.burger-menu[data-open] {
+    display: flex;
+}
 .burger__input {
     width: 0;
     height: 0;
     clip: rect(0, 0, 0, 0);
     position: absolute;
-}
-.burger-menu {
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 .burger__item, .burger__title, .burger__item_single {
     font-family: Inter, sans-serif;
@@ -24,7 +35,7 @@
     margin-top: 16px;
 }
 .burger__item_selected {
- color: var(--red);
+    color: var(--red);
 }
 .burger__title {
     font-family: Inter, sans-serif;
@@ -61,7 +72,7 @@
     left: 12px;
 }
 .burger__content {
-    margin: 0 16px;
+    margin: 0 16px 43px;
 }
 .burger__divider {
     border: 1px solid var(--grey-2);
