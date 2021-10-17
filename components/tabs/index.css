@@ -32,3 +32,9 @@
 .tabs__content_visible {
     display: block;
 }
+
+@media screen and (max-width: 1110px) {
+    .tabs {
+        margin: 0 16px;
+    }
+}
