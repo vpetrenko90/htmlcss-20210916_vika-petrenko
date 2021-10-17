@@ -1,5 +1,8 @@
 .toggle {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 .toggle__input {
     opacity: 0;
@@ -43,7 +46,9 @@
     letter-spacing: 0;
     text-align: left;
     color: var(--grey-4);
-    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .toggle__input:checked ~ .toggle__state .toggle__slider {
     background-color: var(--blue);

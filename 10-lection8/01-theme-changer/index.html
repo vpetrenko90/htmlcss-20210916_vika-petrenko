@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <!-- Пример использования theme-changer -->
 <html lang="ru">
-    <head>
-        <style>
-            html[data-theme-dark] {
-                background: #000;
-            }
-        </style>
-        <script defer src="./theme-changer.js"></script>
-    </head>
-    <body>
-        <input type="checkbox" id="theme-changer">
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+    <style>
+        html[data-theme-dark] {
+            background: #000;
+        }
+    </style>
+    <script defer src="./theme-changer.js"></script>
+</head>
+<body>
+<div>
+    <label class="toggle">
+        <input class="toggle__input" type="checkbox" id="theme-changer"/>
+        <span class="toggle__label">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/sprite.svg#theme-light"></use>
+            </svg>
+        </span>
+
+        <span class="toggle__state">
+            <span class="toggle__slider"></span>
+        </span>
+
+        <span class="toggle__label">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/sprite.svg#theme-dark"></use>
+            </svg>
+        </span>
+    </label>
+</div>
+</body>
 </html>
