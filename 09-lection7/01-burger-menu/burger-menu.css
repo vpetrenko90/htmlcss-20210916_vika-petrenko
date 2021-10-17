@@ -1,0 +1,70 @@
+.burger__input {
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.burger__item, .burger__title, .burger__item_single {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--grey-4);
+}
+.burger__item {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    margin-top: 16px;
+}
+.burger__item_selected {
+ color: var(--red);
+}
+.burger__title {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3);
+}
+.burger__item_single {
+    color: var(--grey-4);
+    margin: 0;
+}
+.burger__theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger__header {
+    display: flex;
+    justify-content: center;
+    padding: 17px 0 8px;
+}
+.burger__close {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 16px;
+    left: 12px;
+}
+.burger__content {
+    margin: 0 16px;
+}
+.burger__divider {
+    border: 1px solid var(--grey-2);
+    margin: 24px 0;
+}
+

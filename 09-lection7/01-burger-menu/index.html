@@ -2,11 +2,61 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
+    <main>
+        <input type="checkbox" id="burger" class="burger__input">
+        <label id="burger-menu-open" for="burger"></label>
 
+        <div id="burger-menu" class="burger-menu" data-open>
+            <label id="burger-menu-close" for="burger"></label>
+            <div class="burger__close">
+                <svg class="burger__icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#burger-close"></use>
+                </svg>
+            </div>
+            <div class="burger__header">
+                <div class="header__logo">
+                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#logo"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="burger__content">
+                <div class="burger__divider"></div>
+
+                <div class="burger__theme">
+                    <div class="burger__item burger__item_single">Dark mode</div>
+                    <label class="toggle">
+                        <input class="toggle__input" type="checkbox"/>
+                        <span class="toggle__state">
+                        <span class="toggle__slider"></span>
+                    </span>
+                    </label>
+                </div>
+
+                <div class="burger__divider"></div>
+
+                <div class="burger__title">Elements</div>
+                <div class="burger__item">Avatar</div>
+                <div class="burger__item burger__item_selected">Custom form elements</div>
+                <div class="burger__item">Button</div>
+
+                <div class="burger__divider"></div>
+
+                <div class="burger__title">Containers</div>
+                <div class="burger__item">Avatar</div>
+                <div class="burger__item">Custom form elements</div>
+                <div class="burger__item">Button</div>
+                <div class="burger__item">Histogram</div>
+            </div>
+        </div>
+    </main>
     </body>
 </html>
